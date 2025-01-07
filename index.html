@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <main class="main-container max-w-7xl w-10/12 mx-auto py-10">
+        <div class="flex justify-between items-center">
+            <h2 class="mb-5 font-semibold text-2xl text-slate-700">Gallery Masonry Layout</h2>
+            <select name="SelectColumns" id="SelectColumns"
+                class="border border-gray-300 cursor-pointer text-gray-700 sm:text-sm rounded">
+                <option value="1">Single Column</option>
+                <option value="2">Two Columns</option>
+                <option value="3">Three Columns</option>
+                <option selected value="4">Four Columns</option>
+            </select>
+        </div>
+        <div class="gallery-container flex gap-5"></div>
+    </main>
+</body>
+
+</html>
